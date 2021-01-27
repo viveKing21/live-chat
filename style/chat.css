@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet);
+	body
+	{
+		font-family: 'Open Sans', sans-serif;
+	}
+	.containers
+	{
+		height:500px;
+		width:60%;
+		background:#f8f8f8;
+		margin:auto;
+		margin-top:100px;
+		overflow: hidden;
+    min-width:902px
+	}
+	.userArea
+	{
+      width:70%;
+      height:100%;
+      background: #f2f2f2;
+      float:left;
+      overflow:hidden;
+      position: relative;
+	}
+	
+	
+   .liveUsers
+   {
+   	height:100%;
+   	width:30%;
+   	background:#f2f2f2;
+   	float: right;
+   	position: relative;
+   	box-shadow:-5px 0 8px #e7e7e7;
+   	
+   }
+   .liveUsers p,.userArea p
+   {
+   	background:skyblue;
+   	color:white;
+   	text-align: center;
+   	margin:0;
+   	padding:10px;
+   	position: absolute;
+   	width:calc(100% - 20px);
+   	top:0;
+   	left:0
+   }
+   .userArea p
+   {
+   	background:#51c0ed;
+   	z-index:1;
+
+   }
+   .liveUsers h3
+   {
+   	text-align: center;
+   	color:#919191;
+   	font-weight:normal;
+   }
+   .users
+   {
+   	height:calc(100% - 43px);
+   	width:calc( 100% - 10px);
+   	padding:5px;
+   	padding-top:38px;
+    overflow-y: scroll;
+   }
+   /* width */
+.users::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.users::-webkit-scrollbar-track {
+  background:#f7f7f7
+}
+ 
+/* Handle */
+.users::-webkit-scrollbar-thumb {
+  background: skyblue; 
+}
+
+/* Handle on hover */
+.users::-webkit-scrollbar-thumb:hover {
+  background: #51c0ed;  
+}
+
+   .userSHOW
+   {
+   	height:30px;
+   	width:100%;
+   	background:;
+   	margin-top:5px;
+   	border:1px solid #d7d7d7;
+   	border-radius:5px;
+   	overflow:hidden;
+    background:white;
+    font-size:15px;
+    color:#828282
+   }
+   .userSHOW div:first-child
+   {
+    width: calc(60% - 10px) ;
+    height:calc(100% - 7px);
+    float:left;
+    padding-top:7px;
+    padding-left:10px
+   }
+   .userSHOW div:first-child i
+   {
+   	font-size:13px;
+   	padding-right:10px;
+   	color:#595959;
+   }
+   .userSHOW div:last-child
+   {
+    width:40%;
+    height:calc(100% - 7px);
+    float:left;
+    background:#ff8d8d;
+    text-align: center;
+    color:white;
+    padding-top:7px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:14px;
+   }
+   .userSHOW div:last-child:hover
+   {
+   	background:#ff6b6b
+   }
+   .notification
+   {
+     width:30%;
+     background:#ebebeb;
+     position:absolute;
+     left:10px;
+     bottom:0;
+     z-index:1;
+     border-bottom:none;
+     border-top-left-radius:5px;
+     border-top-right-radius:5px;
+     overflow:hidden;
+     
+   }
+   #title
+   {
+    width:calc(100% - 10px);
+    padding:5px;
+    color:#606060;
+    text-transform:uppercase;
+    font-size:12px;
+    float:left;
+    padding-bottom:3px;
+    background:#ebebeb;
+    cursor:pointer;
+   }
+   #title i
+   {
+    float:right;
+    font-size:18px;
+    transform-origin:center;
+    transform:translateY(3px);
+
+   }
+   .showingRequest
+   {
+    width:100%;
+    height:0px;
+    background:white;
+    float:left;
+    transition:0.3s;
+    overflow-y:scroll;
+   }
+   .showingRequest > div
+   {
+    height:30px;
+    width:calc(100% - 4px);
+    float:left;
+    background:#ececec;
+    border:2px solid white;
+    border-top:none;
+    cursor:pointer;
+   }
+   .showingRequest > div:first-child
+   {
+    border:2px solid white;
+   }
+   .showingRequest > div > div:first-child
+   {
+    width:calc(80% - 10px);
+    height:calc(100% - 7px);
+    float:left;
+    text-align:justify;
+    padding-left:10px;
+    padding-top:7px;
+    font-size:15px;
+   }
+   .showingRequest > div > div:last-child
+   {
+    width:20%;
+    height:calc(100% - 5px);
+    background:#98ff98;
+    float:left;
+    text-align: center;
+    font-size:20px;
+    padding-top:5px;
+    color:#ffffff;
+    transition:.3s
+   }
+   .showingRequest > div > div:last-child:hover
+   {
+    background:#4dec4d
+   }
+   
+.showingRequest::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.showingRequest::-webkit-scrollbar-track {
+  background:#f7f7f7;
+}
+ 
+/* Handle */
+.showingRequest::-webkit-scrollbar-thumb {
+  background: skyblue; 
+}
+
+/* Handle on hover */
+.showingRequest::-webkit-scrollbar-thumb:hover {
+  background: #51c0ed;  
+}
+.userArea p span
+{
+  font-size:15px;
+  background:#ffffff70;
+  padding: 5px;
+  padding-bottom:3px;
+  border-radius:3px;
+  position:absolute;
+  left:7px;
+  top:7px;
+  letter-spacing:0.5px
+
+}
+.userArea p span i
+{
+  padding-right:10px;
+}
+.showingRequest h3
+{
+  text-align: center;
+  color:#919191;
+  font-weight:normal;
+  font-size:15px;
+  margin-top:70px
+}
